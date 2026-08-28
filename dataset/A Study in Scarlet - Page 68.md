@@ -1,0 +1,5 @@
+# A Study in Scarlet
+
+## Page 68
+
+A Study In Scarlet well-known Scotland Yard ofﬁcials, Messrs. Lestrade and Gregson. The man was apprehended, it appears, in the rooms of a certain Mr. Sherlock Holmes, who has himself, as an amateur, shown some talent in the detective line, and who, with such instructors, may hope in time to attain to some degree of their skill. It is expected that a testimonial of some sort will be presented to the two ofﬁcers as a ﬁtting recognition of their services.” “Didn’t I tell you so when we started?” cried Sher- lock Holmes with a laugh. “That’s the result of all our Study in Scarlet: to get them a testimonial!” “Never mind,” I answered, “I have all the facts in my journal, and the public shall know them. In the meantime you must make yourself contented by the consciousness of success, like the Roman miser— “ ‘Populus me sibilat, at mihi plaudo Ipse domi simul ac nummos contemplar in arca.’ ” 62

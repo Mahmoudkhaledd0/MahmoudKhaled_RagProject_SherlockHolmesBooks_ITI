@@ -1,0 +1,5 @@
+# His Last Bow
+
+## Page 842
+
+The Adventure of the Devil’s Foot upon to interfere. Our investigation has been inde- pendent, and our action shall be so also. You would not denounce the man?” “Certainly not,” I answered. “I have never loved, Watson, but if I did and if the woman I loved had met such an end, I might act even as our lawless lion-hunter has done. Who knows? Well, Watson, I will not offend your intelli- gence by explaining what is obvious. The gravel upon the window-sill was, of course, the starting-point of my research. It was unlike anything in the vicarage garden. Only when my attention had been drawn to Dr. Sterndale and his cottage did I ﬁnd its counterpart. The lamp shining in broad daylight and the remains of powder upon the shield were successive links in a fairly obvious chain. And now, my dear Watson, I think we may dismiss the matter from our mind and go back with a clear conscience to the study of those Chaldean roots which are surely to be traced in the Cornish branch of the great Celtic speech.” 836

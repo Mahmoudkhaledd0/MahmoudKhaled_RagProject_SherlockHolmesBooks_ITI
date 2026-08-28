@@ -1,0 +1,5 @@
+# The Memoirs of Sherlock Holmes
+
+## Page 387
+
+The Greek Interpreter prisoner, for there was no one about the house except the man who acted as coachman, and his wife, both of whom were tools of the conspirators. Finding that their secret was out, and that their prisoner was not to be coerced, the two villains with the girl had ﬂed away at a few hours’ notice from the furnished house which they had hired, having ﬁrst, as they thought, taken vengeance both upon the man who had deﬁed and the one who had betrayed them. Months afterwards a curious newspaper cutting reached us from Buda-Pesth. It told how two English- men who had been traveling with a woman had met with a tragic end. They had each been stabbed, it seems, and the Hungarian police were of opinion that they had quarreled and had inﬂicted mortal injuries upon each other. Holmes, however, is, I fancy, of a different way of thinking, and holds to this day that, if one could ﬁnd the Grecian girl, one might learn how the wrongs of herself and her brother came to be avenged. 381

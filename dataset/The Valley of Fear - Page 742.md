@@ -1,0 +1,5 @@
+# The Valley of Fear
+
+## Page 742
+
+The Valley Of Fear in order to ﬁnd their victim. Then he would indicate how the matter might be treated. Finally, when he read in the reports of the failure of this agent, he would step in himself with a master touch. You heard me warn this man at Birlstone Manor House that the coming danger was greater than the past. Was I right?” Barker beat his head with his clenched ﬁst in his impotent anger. “Do you tell me that we have to sit down under this? Do you say that no one can ever get level with this king-devil?” “No, I don’t say that,” said Holmes, and his eyes seemed to be looking far into the future. “I don’t say that he can’t be beat. But you must give me time—you must give me time!” We all sat in silence for some minutes, while those fateful eyes still strained to pierce the veil. 736

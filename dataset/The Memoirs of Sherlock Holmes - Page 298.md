@@ -1,0 +1,5 @@
+# The Memoirs of Sherlock Holmes
+
+## Page 298
+
+Silver Blaze upon the sheep, and I asked a question which, rather to my surprise, showed that my surmise was correct. “When I returned to London I called upon the milliner, who had recognized Straker as an excellent customer of the name of Derbyshire, who had a very dashing wife, with a strong partiality for expensive dresses. I have no doubt that this woman had plunged him over head and ears in debt, and so led him into this miserable plot.” “You have explained all but one thing,” cried the Colonel. “Where was the horse?” “Ah, it bolted, and was cared for by one of your neighbors. We must have an amnesty in that direc- tion, I think. This is Clapham Junction, if I am not mistaken, and we shall be in Victoria in less than ten minutes. If you care to smoke a cigar in our rooms, Colonel, I shall be happy to give you any other details which might interest you.” 292
