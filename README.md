@@ -153,52 +153,6 @@ Open `index.html` in a browser (it calls the API at `127.0.0.1:8000`).
 
 ---
 
-## API Reference
-
-### `GET /health`
-
-Health check.
-
-```json
-{ "status": "ok" }
-```
-
-### `POST /query`
-
-Ask a question.
-
-**Request**
-
-```json
-{ "query": "Who is Mrs. Hudson?" }
-```
-
-**Response**
-
-```json
-{
-  "query": "Who is Mrs. Hudson?",
-  "route": "retrieve",
-  "answer": "Mrs. Hudson is the landlady of 221B Baker Street...",
-  "sources": [
-    {
-      "book_name": "A Study in Scarlet",
-      "page_number": 17,
-      "score": 0.87
-    }
-  ]
-}
-```
-
-
-`route` is one of `retrieve`, `chitchat`, or `off-topic`. For `chitchat` and `off-topic`, `sources` is empty.
-
-- **`retrieve`** — the query is embedded, matched against Qdrant, and answered by Gemini using the retrieved pages.
-- **`chitchat`** — answered directly by Groq with a friendly reply; no database search, so `sources` is empty.
-- **`off-topic`** — returns a fixed message declining to answer; no LLM call and no `sources`.
-
----
-
 ## Corpus
 
 The knowledge base covers the core Sherlock Holmes works:
