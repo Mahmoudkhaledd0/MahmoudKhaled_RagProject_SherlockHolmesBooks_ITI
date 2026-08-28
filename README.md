@@ -192,15 +192,11 @@ Ask a question.
 
 `route` is one of `retrieve`, `chitchat`, or `off-topic`. For `chitchat` and
 `off-topic`, `sources` is empty.
+`route` is one of `retrieve`, `chitchat`, or `off-topic`. For `chitchat` and `off-topic`, `sources` is empty.
 
-**Example**
-
-```bash
-curl -X POST http://127.0.0.1:8000/query \
-  -H "Content-Type: application/json" \
-  -d '{"query": "How did Holmes and Watson first meet?"}'
-```
-
+- **`retrieve`** — the query is embedded, matched against Qdrant, and answered by Gemini using the retrieved pages.
+- **`chitchat`** — answered directly by Groq with a friendly reply; no database search, so `sources` is empty.
+- **`off-topic`** — returns a fixed message declining to answer; no LLM call and no `sources`.
 ---
 
 ## Corpus
