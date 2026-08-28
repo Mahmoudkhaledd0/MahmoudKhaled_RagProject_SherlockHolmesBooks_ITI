@@ -135,7 +135,7 @@ GROQ_MODEL=openai/gpt-oss-120b
 
 ### Build the index
 
-Run `rag-pipeline.ipynb` end to end to extract the PDF, generate the dataset,
+Run `rag-pipeline.ipynb` to extract the PDF, generate the dataset,
 embed the pages, and populate the Qdrant collection.
 
 ### Run the API
