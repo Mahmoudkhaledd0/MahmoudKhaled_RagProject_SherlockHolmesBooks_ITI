@@ -20,7 +20,8 @@ the corpus.
   corpus using multilingual E5 embeddings.
 - **Grounded answers** — responses are generated strictly from retrieved
   passages
-- **Source citations** — every answer includes book name, page number
+- **Source citations** — every answer lists the book and page number of each
+  passage used, so answers are traceable back to the text.
 - **Multi-provider LLMs** — Groq for fast routing/chitchat, Google Gemini for
   answer synthesis.
 - **Web interface** — a single-page `index.html` for interactive Q&A.
