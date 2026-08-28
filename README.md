@@ -190,13 +190,13 @@ Ask a question.
 }
 ```
 
-`route` is one of `retrieve`, `chitchat`, or `off-topic`. For `chitchat` and
-`off-topic`, `sources` is empty.
+
 `route` is one of `retrieve`, `chitchat`, or `off-topic`. For `chitchat` and `off-topic`, `sources` is empty.
 
 - **`retrieve`** — the query is embedded, matched against Qdrant, and answered by Gemini using the retrieved pages.
 - **`chitchat`** — answered directly by Groq with a friendly reply; no database search, so `sources` is empty.
 - **`off-topic`** — returns a fixed message declining to answer; no LLM call and no `sources`.
+
 ---
 
 ## Corpus
