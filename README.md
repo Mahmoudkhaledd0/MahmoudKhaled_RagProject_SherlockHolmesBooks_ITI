@@ -30,7 +30,6 @@ the corpus.
 
 ## Architecture
 
-```
                  ┌─────────────┐
   User query ──▶ │  Router LLM │ (Groq)
                  └──────┬──────┘
@@ -40,14 +39,13 @@ the corpus.
    retrieve         chitchat         off-topic
         │               │                │
         ▼               ▼                ▼
-  Embed query      Friendly reply   Decline politely
-        │
+  Embed query     Friendly reply    Decline politely
+        │            (Groq)          (fixed message)
         ▼
   Qdrant vector search (top-k)
         │
         ▼
-  Answer LLM (Gemini) + cited sources
-```
+  Answer LLM (Gemini) + page sources
 
 **Data pipeline** (`rag-pipeline.ipynb`):
 

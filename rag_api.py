@@ -16,9 +16,8 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_groq import ChatGroq
 
 
-# TASK
-# Complete TODO 1, TODO 2, TODO 3, and TODO 4.
-# Then run the API and test retrieve, chitchat, and off-topic questions.
+
+
 
 
 # ============================= Setup =============================
@@ -33,7 +32,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# TODO 1: Add these values to your .env file and load them here.
+
 QDRANT_URL = os.getenv("QDRANT_URL")
 QDRANT_API_KEY = os.getenv("QDRANT_API_KEY")
 QDRANT_COLLECTION = os.getenv("QDRANT_COLLECTION")
@@ -47,14 +46,14 @@ GROQ_MODEL = os.getenv("GROQ_MODEL")
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 TOP_K = int(os.getenv("TOP_K"))
 
-model = SentenceTransformer(EMBEDDING_MODEL) # HERE WE NEED TO LOAD THE SAME EMBEDDING MODEL THAT WE USED TO CREATE THE VECTOR DATABASE, WITH THE SAME DIMENSIONALITY.
+model = SentenceTransformer(EMBEDDING_MODEL) 
 
 client = QdrantClient(
     url=QDRANT_URL,
     api_key=QDRANT_API_KEY,
 )
 
-# IF YOU WILL USE ANOTHER LLM FROM ANOTHER PROVIDER, USE THE CORRECT CLASS FROM LANGCHAIN AND PROVIDE THE REQUIRED PARAMETERS.
+
 gemini_llm = ChatGoogleGenerativeAI(
     model=GEMINI_MODEL,
     api_key=GEMINI_API_KEY,
@@ -103,8 +102,7 @@ def health():
 def query_rag(request: QueryRequest):
 
 
-    # TODO 2: Write a prompt that returns only one of these words:
-    # retrieve, chitchat, or off-topic.
+    
     ROUTER_SYSTEM_PROMPT = """You classify messages for a Sherlock Holmes book search system.
             Return exactly one label and nothing else:
             retrieve - questions about the books, characters, places, or events
@@ -125,7 +123,7 @@ def query_rag(request: QueryRequest):
 
     if route == "chitchat":
 
-        # TODO 3: Write a short, friendly prompt for chitchat.
+        
         CHITCHAT_SYSTEM_PROMPT = """You are a friendly assistant for a Sherlock Holmes book Q&A system.
             Respond warmly and briefly to greetings, thanks, and casual conversation.
             Keep replies to one or two sentences, and gently invite the user to ask about 
@@ -170,8 +168,7 @@ def query_rag(request: QueryRequest):
         for result in results
     )
 
-    # TODO 4: Write a prompt that answers only from the provided context.
-    # Tell the model to say "I do not know" when the context is not enough.
+    
     RAG_SYSTEM_PROMPT = """You answer questions about the Sherlock Holmes books using the provided context passages.
                             Rules:
                             - Base your answer on the information in the context, including reasonable inferences from what the passages describe.
