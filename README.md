@@ -40,7 +40,7 @@ the corpus.
         │               │                │
         ▼               ▼                ▼
   Embed query     Friendly reply    Decline politely
-        │           (Gro LLM)          (fixed message)
+        │           (Groq LLM)          (fixed message)
         ▼
   Qdrant vector search (top-k)
         │
