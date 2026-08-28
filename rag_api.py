@@ -147,7 +147,7 @@ def query_rag(request: QueryRequest):
         return QueryResponse(
             query=request.query,
             route=route,
-            answer="I can only answer questions about the Harry Potter books.",
+            answer="I can only answer questions about the Sherlock Holmes books.",
             sources=[],
         )
 
