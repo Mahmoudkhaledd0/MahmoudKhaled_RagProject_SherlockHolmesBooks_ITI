@@ -19,12 +19,11 @@ the corpus.
 - **Semantic retrieval** — dense vector search over the full Sherlock Holmes
   corpus using multilingual E5 embeddings.
 - **Grounded answers** — responses are generated strictly from retrieved
-  passages; the model returns "I do not know" when context is insufficient.
-- **Source citations** — every answer includes book name, page number, and
-  relevance score for each passage used.
+  passages
+- **Source citations** — every answer includes book name, page number
 - **Multi-provider LLMs** — Groq for fast routing/chitchat, Google Gemini for
   answer synthesis.
-- **Web interface** — a single-page `index.html` client for interactive Q&A.
+- **Web interface** — a single-page `index.html` for interactive Q&A.
 
 ---
 
