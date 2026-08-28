@@ -103,8 +103,8 @@ rag/
 ### Installation
 
 ```bash
-git clone <repo-url>
-cd rag
+git clone https://github.com/Mahmoudkhaledd0/MahmoudKhaled_RagProject_ITI.git
+cd MahmoudKhaled_RagProject_ITI
 python -m venv venv
 source venv/bin/activate        # Windows: venv\Scripts\activate
 pip install -r requirements.txt
