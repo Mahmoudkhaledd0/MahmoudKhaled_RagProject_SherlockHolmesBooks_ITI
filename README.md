@@ -30,6 +30,7 @@ the corpus.
 
 ## Architecture
 
+```
                  ┌─────────────┐
   User query ──▶ │  Router LLM │ (Groq)
                  └──────┬──────┘
@@ -46,11 +47,11 @@ the corpus.
         │
         ▼
   Answer LLM (Gemini) + page sources
+```
 
 **Data pipeline** (`rag-pipeline.ipynb`):
 
-1. **Extract** — `Sherlock Holmes.pdf` is converted to Markdown with PyMuPDF
-   (`output.md`).
+1. **Extract** — `Sherlock Holmes.pdf` is converted to Markdown (`output.md`).
 2. **Split** — the combined text is sliced by book and page into per-page
    Markdown files under `dataset/` (one file per page).
 3. **Embed** — each page is encoded with `intfloat/multilingual-e5-large`
@@ -69,7 +70,6 @@ the corpus.
 | Embeddings     | `sentence-transformers` (multilingual E5 large) |
 | LLM (routing)  | Groq (`langchain-groq`)                         |
 | LLM (answers)  | Google Gemini (`langchain-google-genai`)        |
-| PDF extraction | PyMuPDF                                         |
 | Frontend       | Static HTML/JS (`index.html`)                   |
 
 ---
@@ -151,9 +151,11 @@ Open `index.html` in a browser (it calls the API at `127.0.0.1:8000`).
 
 ---
 
+
+
 ## Corpus
 
-The knowledge base covers the core Sherlock Holmes works:
+The knowledge base covers the full Sherlock Holmes canon:
 
 - A Study in Scarlet
 - The Sign of the Four
@@ -161,12 +163,17 @@ The knowledge base covers the core Sherlock Holmes works:
 - The Memoirs of Sherlock Holmes
 - The Return of Sherlock Holmes
 - The Hound of the Baskervilles
+- The Valley of Fear
+- His Last Bow
+- The Case-Book of Sherlock Holmes
 
 ---
 
 ## Notes
 
+- The Sherlock Holmes canon is in the public domain.
 - `.env`, `venv/`, and `__pycache__/` are git-ignored — never commit secrets.
 - The API loads the embedding model at startup; the same model used to build
   the index **must** be used at query time to keep vector dimensions aligned.
+
 
