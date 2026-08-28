@@ -117,7 +117,7 @@ Create a `.env` file in the project root:
 QDRANT_URL=https://your-qdrant-url
 QDRANT_API_KEY=your-qdrant-key
 QDRANT_COLLECTION=sherlock_holmes
-TOP_K=5
+TOP_K=2
 
 # Embeddings
 EMBEDDING_MODEL=intfloat/multilingual-e5-large
