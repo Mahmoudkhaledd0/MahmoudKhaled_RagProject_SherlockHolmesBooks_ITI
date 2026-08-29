@@ -171,6 +171,16 @@
     .sources h3 { margin-bottom: 10px; color: var(--brass); font-size: .75rem; letter-spacing: .1em; text-transform: uppercase; }
     .source { display: flex; align-items: center; gap: 10px; margin-top: 8px; padding: 10px 12px; border-radius: 9px; background: rgba(255, 255, 255, .04); color: var(--muted); font-size: .82rem; }
     .page-number { min-width: 30px; color: var(--brass-bright); font-weight: 700; }
+    .source .book-name { flex: 1; }
+    .score {
+      padding: 2px 8px;
+      border: 1px solid rgba(183, 146, 78, .35);
+      border-radius: 999px;
+      color: var(--brass-bright);
+      font-weight: 700;
+      font-variant-numeric: tabular-nums;
+      font-size: .75rem;
+    }
 
     .error-bar { display: none; width: min(1200px, calc(100% - 48px)); margin: -12px auto 24px; padding: 12px 15px; border: 1px solid rgba(255, 138, 138, .3); border-radius: 10px; color: #ffc0c0; background: rgba(122, 35, 49, .25); font-size: .85rem; }
     .error-bar.show { display: block; }
@@ -357,7 +367,7 @@
         data.sources.forEach((source) => {
           const item = document.createElement("div");
           item.className = "source";
-          item.innerHTML = `<span class="page-number">${source.page_number}</span><span>${source.book_name}</span>`;
+          const score = source.score != null ? (source.score * 100).toFixed(1) + "%" : "";          item.innerHTML = `<span class="page-number">${source.page_number}</span><span class="book-name">${source.book_name}</span><span class="score">${score}</span>`;
           sourcesList.appendChild(item);
         });
       } catch (error) {

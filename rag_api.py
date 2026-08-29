@@ -1,10 +1,5 @@
-"""Simple Harry Potter RAG API exercise.
-
-Task: complete every TODO in this file, then run the API and test /query.
-"""
 
 import os
-
 from dotenv import load_dotenv
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
@@ -23,7 +18,7 @@ from langchain_groq import ChatGroq
 # ============================= Setup =============================
 load_dotenv()
 
-app = FastAPI(title="Harry Potter RAG API")
+app = FastAPI(title="Sherlock Holmes RAG API")
 
 app.add_middleware(
     CORSMiddleware,
@@ -101,8 +96,6 @@ def health():
 @app.post("/query", response_model=QueryResponse)
 def query_rag(request: QueryRequest):
 
-
-    
     ROUTER_SYSTEM_PROMPT = """You classify messages for a Sherlock Holmes book search system.
             Return exactly one label and nothing else:
             retrieve - questions about the books, characters, places, or events
